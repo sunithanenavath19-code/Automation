@@ -17,6 +17,8 @@ public class HomePage extends BasePage {
         super(explicitWaitSec);
     }
 
+    
+    
     // If a close button appears on initial login popup (sometimes '✕')
     @FindBy(css = "button._2KpZ6l._2doB4z")
     private WebElement closeLoginPopupBtn; // if present
@@ -27,6 +29,7 @@ public class HomePage extends BasePage {
 
     public void open(String url) {
         driver.get(url);
+        System.out.println("git test");
     }
 
     public void closeLoginPopupIfVisible() {
